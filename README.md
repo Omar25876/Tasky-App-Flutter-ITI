@@ -1,16 +1,6 @@
-# tasky_app_iti
+# Tasky App ITI
 
-A new Flutter project.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![t1](https://github.com/user-attachments/assets/8deb0090-fd44-48f2-aad2-06bfd1520f31)
+![t2](https://github.com/user-attachments/assets/f3971975-2794-43e6-9a52-10a5bda86f31)
+![t3](https://github.com/user-attachments/assets/1b1dc6d0-bbd6-4a0b-8135-1f6f96e2b337)
