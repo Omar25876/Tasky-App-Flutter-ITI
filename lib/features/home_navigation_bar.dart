@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:tasky_app_iti/core/styles/colors.dart';
 import 'package:tasky_app_iti/features/completed/presentation/completed_view.dart';
 import 'package:tasky_app_iti/features/home/presentation/home_view.dart';
@@ -36,21 +37,29 @@ class _HomeNavigationBarState extends State<HomeNavigationBar> {
         currentIndex: currentIndex,
         onTap: (index) => setState(() => currentIndex = index),
         type: BottomNavigationBarType.fixed,
-        items: const [
+        items: [
           BottomNavigationBarItem(
-            icon: Icon(Icons.home,size: 24,),
+            icon: currentIndex !=0 ?
+            SvgPicture.asset('assets/images/homeIcon.svg',width: 24,height: 24,)
+            :SvgPicture.asset('assets/images/homeIcon.svg',width: 24,height: 24,colorFilter: ColorFilter.mode(mainPrimaryGreenColor, BlendMode.srcIn),),
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.list,size: 24,),
+            icon:  currentIndex !=1 ?
+            SvgPicture.asset('assets/images/todoIcon.svg',width: 24,height: 24,)
+            :SvgPicture.asset('assets/images/todoIcon.svg',width: 24,height: 24,colorFilter: ColorFilter.mode(mainPrimaryGreenColor, BlendMode.srcIn)),
             label: 'To Do',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.check_circle,size: 24,),
+            icon: currentIndex !=2 ?
+            SvgPicture.asset('assets/images/completeIcon.svg',width: 24,height: 24,)
+            : SvgPicture.asset('assets/images/completeIcon.svg',width: 24,height: 24,colorFilter: ColorFilter.mode(mainPrimaryGreenColor, BlendMode.srcIn)),
             label: 'Completed',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.person,size: 24,),
+            icon:  currentIndex !=3 ?
+            SvgPicture.asset('assets/images/profileIcon.svg',width: 24,height: 24,)
+            :  SvgPicture.asset('assets/images/profileIcon.svg',width: 24,height: 24,colorFilter: ColorFilter.mode(mainPrimaryGreenColor, BlendMode.srcIn)),
             label: 'Profile',
           ),
         ],
